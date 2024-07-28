@@ -28,6 +28,7 @@ Before testing in Postman make sure to:
 - Download the test data. In the repository you will find a folder called "Data set for Postman - JSON files" where the datasets created to test in each request are located. Search and download the necessary ones.
 
 After opening Postman, you must access the "Chicks Gold" workspace through the 
+
 `ID: 67d5cb95-8e19-4799-abe4-899582519bcb`
 
 You will be able to see 3 collections: User, Product and Order. In each of them you will find the corresponding requests to test.
@@ -57,9 +58,11 @@ Before running automated tests make sure to:
 - Have Java 17 and Maven installed in your IDE.
 
 Now, you must open the project in your preferred IDE and go to the folder:
+
 `cd qa-challenge`
 
 Open the console and run the following command, where maven will run the tests created:
+
 `mvn test`
 
 Wait while the tests are executed and as a result you will be able to see a summary of them in the console.

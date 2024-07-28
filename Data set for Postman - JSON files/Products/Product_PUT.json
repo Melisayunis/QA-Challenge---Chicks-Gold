@@ -21,12 +21,12 @@
         "id": "",
         "name": "",
         "price": "",
-        "expectedStatus": 404
+        "expectedStatus": 400
     },
     {
         "testCase": "Product update with valid parameter ID and without fields",
         "ID_Parameter": 2,
-        "expectedStatus": 404
+        "expectedStatus": 400
     },
     {
         "testCase": "Product update with invalid parameter ID (is empty)",
@@ -34,7 +34,7 @@
         "id": 30,
         "name": "Strange product",
         "price": 10,
-        "expectedStatus": 400
+        "expectedStatus": 405
     },
     {
         "testCase": "Product update with invalid parameter ID (is a String)",

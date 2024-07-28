@@ -1,0 +1,117 @@
+{
+	"id": "8e1e1204-0487-422f-a911-f970ae72b459",
+	"name": "User",
+	"timestamp": "2024-07-28T15:48:11.991Z",
+	"collection_id": "27984302-37f0c964-de28-4425-a46a-797b0e70060c",
+	"folder_id": 0,
+	"environment_id": "27984302-c03e7534-bd5f-4543-9efd-9ceaf24d5a76",
+	"totalPass": 27,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-28T15:48:10.702Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "95805b23-47d4-4fa8-9b4a-7118f1665aaa",
+			"name": "Login",
+			"url": "http://localhost:5044/api/User/login",
+			"time": 2,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				" Status code is correct": true,
+				"Response time is less than 200ms": true,
+				"User unauthorized.": true
+			},
+			"testPassFailCounts": {
+				" Status code is correct": {
+					"pass": 9,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 9,
+					"fail": 0
+				},
+				"Token is correct.": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User unauthorized.": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23,
+				2,
+				10,
+				3,
+				2,
+				2,
+				2,
+				2,
+				2
+			],
+			"allTests": [
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"Token is correct.": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"User unauthorized.": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"User unauthorized.": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"User unauthorized.": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"User unauthorized.": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"User unauthorized.": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"User unauthorized.": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"User unauthorized.": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true,
+					"User unauthorized.": true
+				}
+			]
+		}
+	],
+	"count": 9,
+	"totalTime": 48,
+	"collection": {
+		"requests": [
+			{
+				"id": "95805b23-47d4-4fa8-9b4a-7118f1665aaa",
+				"method": "POST"
+			}
+		]
+	}
+}

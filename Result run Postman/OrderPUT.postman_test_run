@@ -1,0 +1,94 @@
+{
+	"id": "86cb122a-af2a-4ea8-b476-aa3c1ef60e20",
+	"name": "Order",
+	"timestamp": "2024-07-28T18:38:06.900Z",
+	"collection_id": "27984302-cb0cc65c-ab77-4412-8dae-5d49f1b66828",
+	"folder_id": 0,
+	"environment_id": "27984302-c03e7534-bd5f-4543-9efd-9ceaf24d5a76",
+	"totalPass": 16,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-28T18:38:05.346Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "87868e4b-346d-45fa-87e4-37fa3d2725d8",
+			"name": "Update an order by ID",
+			"url": "http://localhost:5044/api/Order/+-*",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				" Status code is correct": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				" Status code is correct": {
+					"pass": 8,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 8,
+					"fail": 0
+				}
+			},
+			"times": [
+				33,
+				2,
+				3,
+				2,
+				2,
+				2,
+				2,
+				2
+			],
+			"allTests": [
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 8,
+	"totalTime": 48,
+	"collection": {
+		"requests": [
+			{
+				"id": "87868e4b-346d-45fa-87e4-37fa3d2725d8",
+				"method": "PUT"
+			}
+		]
+	}
+}

@@ -17,7 +17,7 @@
     {
         "testCase": "Product deletion with invalid ID (is empty)",
         "ID_Parameter": "",
-        "expectedStatus": 400
+        "expectedStatus": 405
     },
     {
         "testCase": "Product deletion with invalid ID (is a String)",

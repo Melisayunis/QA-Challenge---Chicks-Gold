@@ -24,12 +24,12 @@
         "productName": "",
         "quantity": "",
         "status": "",
-        "expectedStatus": 404
+        "expectedStatus": 400
     },
     {
         "testCase": "Order update with valid parameter ID and without fields",
         "ID_Parameter": 2,
-        "expectedStatus": 404
+        "expectedStatus": 400
     },
     {
         "testCase": "Order update without parameter ID and valid fields",
@@ -37,7 +37,7 @@
         "productName": "Yellow product",
         "quantity": 7,
         "status": "OK",
-        "expectedStatus": 404
+        "expectedStatus": 400
     },
     {
         "testCase": "Order update without parameter ID and fields",

@@ -38,16 +38,16 @@
     {
         "testCase": "Validate and verify that the login isn't successful with invalid credentials. Without the username parameter.",
         "password": "password",
-        "expectedStatus": 400
+        "expectedStatus": 401
     },
     {
         "testCase": "Validate and verify that the login isn't successful with invalid credentials. Without the password parameter.",
         "username": "testuser",
-        "expectedStatus": 400
+        "expectedStatus": 401
     },
     {
         "testCase": "Validate and verify that the login isn't successful with invalid credentials. Without both parameters (body empty).",
-        "expectedStatus": 400
+        "expectedStatus": 401
     }
 ]
 

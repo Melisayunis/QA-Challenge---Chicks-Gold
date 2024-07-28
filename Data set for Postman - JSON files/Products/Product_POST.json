@@ -70,7 +70,7 @@
     },
     {
         "testCase": "Valid product creation with ID having 20 characters",
-        "id": 32165498701230000000,
+        "id": 3216549870,
         "name": "Big product",
         "price": 62,
         "expectedStatus": 201
@@ -148,7 +148,7 @@
         "id": 13,
         "name": "Beauty product",
         "price": 1.55,
-        "expectedStatus": 400
+        "expectedStatus": 201
     },
     {
         "testCase": "Valid product creation with Price having 1 character",

@@ -1,0 +1,79 @@
+{
+	"id": "06ab083b-39d8-4a22-904b-0d5f08a260f2",
+	"name": "Order",
+	"timestamp": "2024-07-28T18:43:53.226Z",
+	"collection_id": "27984302-cb0cc65c-ab77-4412-8dae-5d49f1b66828",
+	"folder_id": 0,
+	"environment_id": "27984302-c03e7534-bd5f-4543-9efd-9ceaf24d5a76",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-28T18:43:51.905Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "fe0c3abf-92a5-4442-81f3-b09d7af1fa7a",
+			"name": "Get an order by ID",
+			"url": "http://localhost:5044/api/Order/+-*",
+			"time": 15,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				" Status code is correct": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				" Status code is correct": {
+					"pass": 5,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 5,
+					"fail": 0
+				}
+			},
+			"times": [
+				25,
+				3,
+				3,
+				3,
+				15
+			],
+			"allTests": [
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				},
+				{
+					" Status code is correct": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 49,
+	"collection": {
+		"requests": [
+			{
+				"id": "fe0c3abf-92a5-4442-81f3-b09d7af1fa7a",
+				"method": "GET"
+			}
+		]
+	}
+}

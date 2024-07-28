@@ -52,4 +52,16 @@ To view already performed runs and their results, click on a collection name and
 
 
 #### Web with Selenium 
+Before running automated tests make sure to:
+- Run the Web and API locally on your PC (follow the steps indicated in the project repository).
+- Have Java 17 and Maven installed in your IDE.
+
+Now, you must open the project in your preferred IDE and go to the folder:
+> cd qa-challenge
+Open the console and run the following command, where maven will run the tests created:
+> mvn test
+Wait while the tests are executed and as a result you will be able to see a summary of them in the console.
+
+![TestExecution_Console_MavenTest](https://github.com/user-attachments/assets/2aced230-2584-495c-90cc-804f56d5238c)
+
 

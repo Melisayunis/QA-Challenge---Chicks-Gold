@@ -43,7 +43,12 @@ To run Runner for each request you must:
 - Wait and see the test results!
 
 ![Postman_Runner](https://github.com/user-attachments/assets/6387d524-1bc9-48d8-b598-c06495a6695c)
+
+
 ![Postman_Execution](https://github.com/user-attachments/assets/44a51bba-a547-4bad-88df-642f95af9950)
+
+To view already performed runs and their results, click on a collection name and select the "Run" tab.
+![Postman_ViewRuns](https://github.com/user-attachments/assets/4134c4c7-535e-4558-98a1-b56c1727a725)
 
 
 #### Web with Selenium 

@@ -21,6 +21,8 @@ Automation has been implemented in two parts:
 
 ### Run automation
 
+#### API with Postman 
+
 Before testing in Postman make sure to:
 - Run the API locally on your PC (follow the steps indicated in the project repository).
 - Download the test data. In the repository you will find a folder called "Data set for Postman - JSON files" where the datasets created to test in each request are located. Search and download the necessary ones.
@@ -42,8 +44,6 @@ To run Runner for each request you must:
 
 ![Postman_Runner](https://github.com/user-attachments/assets/6387d524-1bc9-48d8-b598-c06495a6695c)
 ![Postman_Execution](https://github.com/user-attachments/assets/44a51bba-a547-4bad-88df-642f95af9950)
-
-#### API with Postman
 
 
 #### Web with Selenium 

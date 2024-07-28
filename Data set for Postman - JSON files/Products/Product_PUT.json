@@ -1,0 +1,55 @@
+[
+    {
+        "testCase": "Product update with valid ID and fields",
+        "ID_Parameter": 2,
+        "id": 20,
+        "name": "Really sweet product",
+        "price": 0,
+        "expectedStatus": 204
+    },
+    {
+        "testCase": "Product update with invalid parameter ID and valid fields",
+        "ID_Parameter": 695234,
+        "id": 30,
+        "name": "Strange product",
+        "price": 10,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Product update with valid parameter ID and empty fields",
+        "ID_Parameter": 2,
+        "id": "",
+        "name": "",
+        "price": "",
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Product update with valid parameter ID and without fields",
+        "ID_Parameter": 2,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Product update with invalid parameter ID (is empty)",
+        "ID_Parameter": "",
+        "id": 30,
+        "name": "Strange product",
+        "price": 10,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Product update with invalid parameter ID (is a String)",
+        "ID_Parameter": "idString",
+        "id": 30,
+        "name": "Strange product",
+        "price": 10,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Product update with invalid parameter ID (has symbols)",
+        "ID_Parameter": "+-*",
+        "id": 30,
+        "name": "Strange product",
+        "price": 10,
+        "expectedStatus": 400
+    }
+]

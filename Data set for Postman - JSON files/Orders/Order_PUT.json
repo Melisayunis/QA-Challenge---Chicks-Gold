@@ -1,0 +1,66 @@
+[
+    {
+        "testCase": "Order update with valid ID and fields",
+        "ID_Parameter": 2,
+        "id": 1,
+        "productName": "Green new product",
+        "quantity": 15,
+        "status": "UPDATED",
+        "expectedStatus": 204
+    },
+    {
+        "testCase": "Order update with invalid parameter ID and valid fields",
+        "ID_Parameter": 8888,
+        "id": 2,
+        "productName": "Grey product",
+        "quantity": 6,
+        "status": "OK",
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Order update with valid parameter ID and empty fields",
+        "ID_Parameter": 2,
+        "id": "",
+        "productName": "",
+        "quantity": "",
+        "status": "",
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Order update with valid parameter ID and without fields",
+        "ID_Parameter": 2,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Order update without parameter ID and valid fields",
+        "id": 3,
+        "productName": "Yellow product",
+        "quantity": 7,
+        "status": "OK",
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Order update without parameter ID and fields",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Order update with invalid parameter ID (is a String) and valid fields",
+        "ID_Parameter": "idString",
+        "id": 2,
+        "productName": "Green product",
+        "quantity": 5,
+        "status": "OK",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Order update with invalid parameter ID (has symbols) and valid fields",
+        "ID_Parameter": "+-*",
+        "id": 2,
+        "productName": "Green product",
+        "quantity": 6,
+        "status": "OK",
+        "expectedStatus": 400
+    }
+]
+
+

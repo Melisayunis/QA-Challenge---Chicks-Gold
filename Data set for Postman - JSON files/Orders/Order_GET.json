@@ -1,0 +1,26 @@
+[
+    {
+        "testCase": "Order query with valid ID",
+        "ID_Parameter": 2,
+        "expectedStatus": 200
+    },
+    {
+        "testCase": "Order query with invalid ID",
+        "ID_Parameter": 3232,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Order query with invalid ID (is empty)",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Order query with invalid ID (is a String)",
+        "ID_Parameter": "idString",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Order query with invalid ID (has symbols)",
+        "ID_Parameter": "+-*",
+        "expectedStatus": 400
+    }
+]

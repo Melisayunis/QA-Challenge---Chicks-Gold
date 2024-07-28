@@ -1,0 +1,33 @@
+[
+    {
+        "testCase": "Order deletion with valid ID",
+        "ID_Parameter": 1,
+        "expectedStatus": 204
+    },
+    {
+        "testCase": "Order deletion with invalid ID",
+        "ID_Parameter": 222,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Order deletion attempted twice",
+        "ID_Parameter": 1,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Order deletion with invalid ID (is empty)",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Order deletion with invalid ID (is a String)",
+        "ID_Parameter": "idString",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Order deletion with invalid ID (has symbols)",
+        "ID_Parameter": "+-*",
+        "expectedStatus": 400
+    }
+]
+
+

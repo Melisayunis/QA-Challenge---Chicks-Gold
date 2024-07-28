@@ -1,0 +1,32 @@
+[
+    {
+        "testCase": "Product deletion with valid ID",
+        "ID_Parameter": 1,
+        "expectedStatus": 204
+    },
+    {
+        "testCase": "Product deletion with invalid ID",
+        "ID_Parameter": 123456,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Product deletion cannot be done twice with the same ID",
+        "ID_Parameter": 1,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Product deletion with invalid ID (is empty)",
+        "ID_Parameter": "",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Product deletion with invalid ID (is a String)",
+        "ID_Parameter": "idString",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Product deletion with invalid ID (has symbols)",
+        "ID_Parameter": "+-*",
+        "expectedStatus": 400
+    }
+]

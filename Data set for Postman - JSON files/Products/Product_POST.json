@@ -1,0 +1,188 @@
+[
+    {
+        "testCase": "Valid product creation with valid login and credentials",
+        "id": 1,
+        "name": "Product",
+        "price": 10,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Invalid product creation with invalid login and valid credentials",
+        "id": 22,
+        "name": "New product",
+        "price": 5,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with repeated ID",
+        "id": 1,
+        "name": "Green product",
+        "price": 12,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation without ID",
+        "name": "Violet product",
+        "price": 6,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with empty ID",
+        "id": "",
+        "name": "Pink product",
+        "price": 100,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with ID as string",
+        "id": "idhere",
+        "name": "Orange product",
+        "price": 20,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with ID containing symbols",
+        "id": "+-*/",
+        "name": "Rare product",
+        "price": 5000,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with ID as float",
+        "id": 5.5,
+        "name": "Float product",
+        "price": 50,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with negative ID",
+        "id": -9,
+        "name": "Negative product",
+        "price": 32,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Valid product creation with ID having 1 character",
+        "id": 2,
+        "name": "Sweet product",
+        "price": 33,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Valid product creation with ID having 20 characters",
+        "id": 32165498701230000000,
+        "name": "Big product",
+        "price": 62,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Invalid product creation without Name",
+        "id": 3,
+        "price": 0,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with empty Name",
+        "id": 4,
+        "name": "",
+        "price": 11,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Valid product creation with Name containing number",
+        "id": 5,
+        "name": "Product 3232",
+        "price": 15,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Valid product creation with Name containing symbols",
+        "id": 6,
+        "name": "Product +/<*-*>",
+        "price": 21,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Valid product creation with Name having 1 character",
+        "id": 7,
+        "name": "a",
+        "price": 20,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Valid product creation with Name having 35 characters",
+        "id": 8,
+        "name": "This product has a really long name",
+        "price": 150,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Invalid product creation without Price",
+        "id": 9,
+        "name": "Dark product",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with empty Price",
+        "id": 10,
+        "name": "Black product",
+        "price": "",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with Price as string",
+        "id": 11,
+        "name": "White product",
+        "price": "one",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with Price containing symbols",
+        "id": 12,
+        "name": "Symbol product",
+        "price": "$20+-*/",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation with Price as float",
+        "id": 13,
+        "name": "Beauty product",
+        "price": 1.55,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Valid product creation with Price having 1 character",
+        "id": 14,
+        "name": "Cute product",
+        "price": 8,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Invalid product creation with negative Price",
+        "id": 15,
+        "name": "Red product",
+        "price": -15,
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Valid product creation with Price having 10 characters",
+        "id": 16,
+        "name": "Very expensive product",
+        "price": 1500020001,
+        "expectedStatus": 201
+    },
+    {
+        "testCase": "Invalid product creation with all elements empty",
+        "id": "",
+        "name": "",
+        "price": "",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Invalid product creation without elements",
+        "expectedStatus": 400
+    }
+]
+
+
+

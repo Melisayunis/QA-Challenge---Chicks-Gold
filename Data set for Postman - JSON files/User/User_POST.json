@@ -1,0 +1,55 @@
+[
+    {
+        "testCase": "Validate that the login is successful with valid credentials.",
+        "username": "testuser",
+        "password": "password",
+        "expectedStatus": 200
+    },
+    {
+        "testCase": "Validate and verify that the login isn't successful with invalid credentials. Username empty.",
+        "username": "",
+        "password": "password",
+        "expectedStatus": 401
+    },
+    {
+        "testCase": "Validate and verify that the login isn't successful with invalid credentials. Password empty.",
+        "username": "testuser",
+        "password": "",
+        "expectedStatus": 401
+    },
+    {
+        "testCase": "Validate and verify that the login isn't successful with invalid credentials. Both parameters empty.",
+        "username": "",
+        "password": "",
+        "expectedStatus": 401
+    },
+    {
+        "testCase": "Validate and verify that the login isn't successful with invalid credentials. Username invalid.",
+        "username": "testuser1",
+        "password": "password",
+        "expectedStatus": 401
+    },
+    {
+        "testCase": "Validate and verify that the login isn't successful with invalid credentials. Password invalid.",
+        "username": "testuser",
+        "password": "password2",
+        "expectedStatus": 401
+    },
+    {
+        "testCase": "Validate and verify that the login isn't successful with invalid credentials. Without the username parameter.",
+        "password": "password",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Validate and verify that the login isn't successful with invalid credentials. Without the password parameter.",
+        "username": "testuser",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Validate and verify that the login isn't successful with invalid credentials. Without both parameters (body empty).",
+        "expectedStatus": 400
+    }
+]
+
+
+

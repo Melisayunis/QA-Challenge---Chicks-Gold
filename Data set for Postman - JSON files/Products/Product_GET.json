@@ -1,0 +1,27 @@
+[
+    {
+        "testCase": "Product query with valid ID",
+        "ID_Parameter": 1,
+        "expectedStatus": 200
+    },
+    {
+        "testCase": "Product query with invalid ID",
+        "ID_Parameter": 123456,
+        "expectedStatus": 404
+    },
+    {
+        "testCase": "Product query without ID",
+        "ID_Parameter": "",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Product query with invalid ID (is a string)",
+        "ID_Parameter": "idString",
+        "expectedStatus": 400
+    },
+    {
+        "testCase": "Product query with invalid ID (has symbols)",
+        "ID_Parameter": "+-*",
+        "expectedStatus": 400
+    }
+]

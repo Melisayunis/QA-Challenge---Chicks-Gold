@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test suite" configfailurepolicy="continue">
+
+    <test name="Home Page test">
+        <classes>
+            <class name="org.qachallenge.test.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="User test">
+        <classes>
+            <class name="org.qachallenge.test.LoginDashboardPagesTest"/>
+        </classes>
+    </test>
+
+    <test name="Products and Order test">
+        <classes>
+            <class name="org.qachallenge.test.ProductOrderPageTest"/>
+        </classes>
+    </test>
+
+</suite>
